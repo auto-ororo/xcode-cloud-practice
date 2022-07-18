@@ -8,6 +8,6 @@
       location = "group:XcodeCloudPracticePrd/XcodeCloudPracticePrd.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:XcodeCroudPracticeDev/XcodeCloudPracticeDev.xcodeproj">
+      location = "group:XcodeCloudPracticeDev/XcodeCloudPracticeDev.xcodeproj">
    </FileRef>
 </Workspace>
