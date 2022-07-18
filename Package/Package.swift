@@ -31,10 +31,8 @@ let package = Package(
             ]
         ),
         .testTarget(
-            name: "UITests",
-            dependencies: ["Content"]),
-        .testTarget(
             name: "UnitTests",
-            dependencies: ["Content"])
+            dependencies: ["Content"]
+        )
     ]
 )
