@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:Package">
+   </FileRef>
+   <FileRef
+      location = "group:XcodeCloudPracticePrd/XcodeCloudPracticePrd.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:XcodeCroudPracticeDev/XcodeCroudPracticeDev.xcodeproj">
+   </FileRef>
+</Workspace>
