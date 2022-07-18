@@ -37,7 +37,6 @@
 		7C08F3D8288456BD00F1621B = {
 			isa = PBXGroup;
 			children = (
-				7C08F41428851E1900F1621B /* Secrets.swift */,
 				7C08F3E3288456BD00F1621B /* XcodeCroudPracticeDev */,
 				7C08F3E2288456BD00F1621B /* Products */,
 				7C08F40F2884584B00F1621B /* Frameworks */,
@@ -55,6 +54,7 @@
 		7C08F3E3288456BD00F1621B /* XcodeCroudPracticeDev */ = {
 			isa = PBXGroup;
 			children = (
+				7C08F41428851E1900F1621B /* Secrets.swift */,
 				7C08F3E4288456BD00F1621B /* XcodeCroudPracticeDevApp.swift */,
 				7C08F3E8288456BE00F1621B /* Assets.xcassets */,
 				7C08F3EA288456BE00F1621B /* Preview Content */,
