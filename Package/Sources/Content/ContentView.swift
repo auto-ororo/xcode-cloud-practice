@@ -11,10 +11,8 @@ public struct ContentView: View {
         self.envName = envName
         self.secretKey = secretKey
     }
-    
     let envName: String
     let secretKey: String
-    
     public var body: some View {
         VStack {
             HStack {
@@ -22,7 +20,6 @@ public struct ContentView: View {
                 Text(envName)
             }
             .padding(.vertical, 16)
-            
             HStack {
                 Text("SecretKey：")
                 Text(secretKey)
