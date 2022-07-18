@@ -1,3 +1,3 @@
 #!/bin/sh
 
-echo $DEV_SECRETS > ../XcodeCroudPracticeDev/XcodeCroudPracticeDev/Secrets.swift
+echo $DEV_SECRETS > ../XcodeCloudPracticeDev/XcodeCloudPracticeDev/Secrets.swift
