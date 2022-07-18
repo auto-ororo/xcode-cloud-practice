@@ -8,3 +8,6 @@ then
 else
     ./dev_post_clone_task.sh
 fi
+
+cd ../Package
+swift package reset
