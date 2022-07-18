@@ -36,6 +36,13 @@ let package = Package(
             plugins: [
                 .plugin(name: "LintPlugin", package: "LintAllModulesStrictry")
             ]
+        ),
+        .testTarget(
+            name: "UITests",
+            dependencies: ["Content"],
+            plugins: [
+                .plugin(name: "LintPlugin", package: "LintAllModulesStrictry")
+            ]
         )
     ]
 )
