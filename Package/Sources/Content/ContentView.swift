@@ -19,7 +19,6 @@ public struct ContentView: View {
                 Text("環境：")
                 Text(envName)
             }
-            
             .padding(.vertical, 16)
             HStack {
                 Text("SecretKey：")
