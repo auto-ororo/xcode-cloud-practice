@@ -10,4 +10,4 @@ else
 fi
 
 cd ../Package
-swift package resolve
+swift package reset
