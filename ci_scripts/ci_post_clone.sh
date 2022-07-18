@@ -9,5 +9,5 @@ else
     ./dev_post_clone_task.sh
 fi
 
-cd Package
+cd ../Package
 swift package resolve
