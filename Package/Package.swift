@@ -32,7 +32,10 @@ let package = Package(
         ),
         .testTarget(
             name: "UnitTests",
-            dependencies: ["Content"]
+            dependencies: ["Content"],
+            plugins: [
+                .plugin(name: "LintPlugin", package: "LintAllModulesStrictry")
+            ]
         )
     ]
 )
