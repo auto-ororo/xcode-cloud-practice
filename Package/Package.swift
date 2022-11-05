@@ -1,4 +1,4 @@
-// swift-tools-version: 5.6
+// swift-tools-version: 5.7
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -13,7 +13,8 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "AppRoot",
-            targets: ["Content"])
+            targets: ["Content"]
+        )
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -27,15 +28,14 @@ let package = Package(
             name: "Content",
             dependencies: [],
             plugins: [
-                .plugin(name: "LintPlugin", package: "LintAllModulesStrictry")
+                // 起点となるモジュールにPluginを反映
+                .plugin(name: "LintPlugin", package: "LintAllTargetsStrictry")
             ]
         ),
         .testTarget(
             name: "UnitTests",
             dependencies: ["Content"],
-            plugins: [
-                .plugin(name: "LintPlugin", package: "LintAllModulesStrictry")
-            ]
+            plugins: []
         )
     ]
 )
