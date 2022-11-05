@@ -1,6 +1,6 @@
 //
-//  LintAllModulesStrictry.swift
-//  
+//  LintAllTargetsStrictry.swift
+//
 //
 //  Created by ororo on 2022/07/18.
 //
@@ -8,11 +8,11 @@
 import PackagePlugin
 
 @main
-struct LintAllModulesStrictry: BuildToolPlugin {
-    func createBuildCommands(context: PluginContext, target: Target) async throws -> [Command] {
+struct LintAllTargetsStrictry: BuildToolPlugin {
+    func createBuildCommands(context: PluginContext, target _: Target) async throws -> [Command] {
         return [
             .buildCommand(
-                displayName: "Lint All Modules Strictry",
+                displayName: "Lint All Targets Strictry",
                 executable: try context.tool(named: "swiftlint").path,
                 arguments: [
                     "lint",
@@ -20,10 +20,10 @@ struct LintAllModulesStrictry: BuildToolPlugin {
                     "--strict",
                     "--path",
                     // 全Moduleを対象
-                    "."
+                    ".",
                 ],
                 environment: [:]
-            )
+            ),
         ]
     }
 }
