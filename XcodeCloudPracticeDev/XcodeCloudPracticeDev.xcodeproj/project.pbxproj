@@ -84,6 +84,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7C08F3EF288456BE00F1621B /* Build configuration list for PBXNativeTarget "XcodeCloudPracticeDev" */;
 			buildPhases = (
+				7C5363BD291728E6007D81A7 /* Format Source Code */,
 				7C08F3DD288456BD00F1621B /* Sources */,
 				7C08F3DE288456BD00F1621B /* Frameworks */,
 				7C08F3DF288456BD00F1621B /* Resources */,
@@ -144,6 +145,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7C5363BD291728E6007D81A7 /* Format Source Code */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Format Source Code";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nxcrun --sdk macosx swift package --package-path ../Package plugin --allow-writing-to-package-directory format-source-code\nxcrun --sdk macosx swift package --package-path ../BuildTools plugin --allow-writing-to-package-directory format-source-code\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7C08F3DD288456BD00F1621B /* Sources */ = {
