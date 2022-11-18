@@ -13,7 +13,7 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .plugin(
             name: "LintPlugin",
-            targets: ["LintAllTargetsStrictry"]
+            targets: ["LintStrictry"]
         ),
         .plugin(
             name: "FormatPlugin",
@@ -37,10 +37,10 @@ let package = Package(
             checksum: "a3221d54c2ac00f5c0ce0a2ebc6906ee371d527814174a9c65983f3a3a395321"
         ),
         .plugin(
-            name: "LintAllTargetsStrictry",
+            name: "LintStrictry",
             capability: .buildTool(),
             dependencies: [
-                "SwiftLintBinary",
+                .target(name: "SwiftLintBinary"),
             ]
         ),
         .plugin(
