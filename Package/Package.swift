@@ -3,7 +3,7 @@
 
 import PackageDescription
 
-let package = Package(
+var package = Package(
     name: "Package",
     defaultLocalization: "ja",
     platforms: [
@@ -26,16 +26,23 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "Content",
-            dependencies: [],
-            plugins: [
-                // 起点となるモジュールにPluginを反映
-                .plugin(name: "LintPlugin", package: "LintAllTargetsStrictry")
-            ]
+            dependencies: []
         ),
         .testTarget(
             name: "UnitTests",
-            dependencies: ["Content"],
-            plugins: []
+            dependencies: ["Content"]
         )
     ]
 )
+
+// すべてのTarget(Module)にLintを適用
+package.targets = package.targets.map { target -> Target in
+    if target.type == .regular || target.type == .test {
+        if target.plugins == nil {
+            target.plugins = []
+        }
+        target.plugins?.append(.plugin(name: "LintPlugin", package: "LintStrictry"))
+    }
+
+    return target
+}

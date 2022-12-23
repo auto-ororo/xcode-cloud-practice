@@ -1,0 +1,11 @@
+identifier_name:
+  min_length: 2
+  max_length:
+    warning: 60
+    error: 1000
+
+type_name:
+  min_length: 2
+  max_length:
+    warning: 60
+    error: 1000

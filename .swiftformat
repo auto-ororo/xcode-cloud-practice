@@ -1,0 +1,121 @@
+# rules
+--rules andOperator
+
+--rules anyObjectProtocol
+
+--rules assertionFailures
+
+--rules trailingCommas
+
+--rules braces
+--allman false
+
+--rules consecutiveBlankLines
+
+--rules consecutiveSpaces
+
+--rules duplicateImports
+
+--rules elseOnSameLine
+
+--rules emptyBraces
+
+--rules enumNamespaces
+
+--rules extensionAccessControl
+--extensionacl on-declarations
+
+--rules hoistPatternLet
+--patternlet inline
+
+--rules indent
+--indent 4
+
+--rules modifierOrder
+
+--rules preferDouble
+
+--rules redundantBreak
+
+--rules redundantClosure
+
+--rules redundantExtensionACL
+
+--rules redundantFileprivate
+
+--rules redundantGet
+
+--rules redundantInit
+
+--rules redundantLet
+
+--rules redundantLetError
+
+--rules redundantNilInit
+
+--rules redundantObjc
+
+--rules redundantParens
+
+--rules redundantPattern
+
+--rules redundantRawValues
+
+--rules redundantReturn
+
+--rules redundantSelf
+--self remove
+--selfrequired AwakeCountField,CompleteButtonView,NextButtonView,init
+
+--rules redundantType
+
+--rules semicolons
+--semicolons inline
+
+--rules spaceAroundBraces
+
+--rules spaceAroundBrackets
+
+--rules spaceAroundComments
+
+--rules spaceAroundOperators
+
+--rules spaceAroundParens
+
+--rules spaceInsideBraces
+
+--rules spaceInsideBrackets
+
+--rules trailingClosures
+
+--rules trailingCommas
+--commas inline
+
+--rules trailingSpace
+--trimwhitespace always
+
+--rules typeSugar
+--shortoptionals always
+
+--rules unusedArguments
+
+--rules void
+--voidtype void
+
+--rules wrap
+--maxwidth 130
+
+--rules wrapArguments
+--wraparguments before-first
+--wrapparameters before-first
+--wrapcollections before-first
+--closingparen balanced
+--wrapreturntype preserve
+--wrapconditions before-first
+--wraptypealiases before-first 
+
+--rules wrapAttributes
+--funcattributes prev-line
+--typeattributes prev-line
+--varattributes same-line
+
