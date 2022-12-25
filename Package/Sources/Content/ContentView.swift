@@ -5,6 +5,7 @@
 //
 
 import SwiftUI
+import FirebaseAuth
 
 public struct ContentView: View {
     public init(envName: String, secretKey: String) {
@@ -26,6 +27,16 @@ public struct ContentView: View {
                 Text(secretKey)
             }
             .padding(.vertical, 16)
+            Button("Firebase サインイン") {
+                Task {
+                    do {
+                        let result = try await Auth.auth().signInAnonymously()
+                        print("UserCreated: \(result.user.uid)")
+                    } catch {
+                        print(error)
+                    }
+                }
+            }
         }.font(.title2)
     }
 }

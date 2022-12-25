@@ -17,7 +17,7 @@ struct LintStrictry: BuildToolPlugin {
                 arguments: [
                     "lint",
                     "--config",
-                    "\(context.package.directory.string)/.swiftlint.yml",
+                    "../.swiftlint.yml",
                     "--in-process-sourcekit",
                     "--strict",
                     target.directory.string   // only lint the files in the target directory

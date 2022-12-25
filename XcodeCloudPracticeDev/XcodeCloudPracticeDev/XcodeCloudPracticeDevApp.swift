@@ -7,12 +7,16 @@
 
 import SwiftUI
 import Content
+import FirebaseCore
 
 @main
 struct XcodeCloudPracticeDevApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView(envName: "Dev", secretKey: secretKey)
+                .onAppear {
+                    FirebaseApp.configure()
+                }
         }
     }
 }
