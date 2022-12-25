@@ -29,3 +29,5 @@ playground.xcworkspace
 .build/
 
 Secrets.swift
+
+GoogleService-Info.plist
