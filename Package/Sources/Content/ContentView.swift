@@ -21,12 +21,12 @@ public struct ContentView: View {
                 Text("環境：")
                 Text(envName)
             }
-            .padding(.vertical, 32)
+            .padding(.vertical, 100)
             HStack {
                 Text("SecretKey：")
                 Text(secretKey)
             }
-            .padding(.vertical, 32)
+            .padding(.vertical, 100)
             Button("Firebase サインイン") {
                 Task {
                     do {
